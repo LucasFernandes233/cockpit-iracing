@@ -1,0 +1,42 @@
+# === FreeCAD ===
+*.FCStd1
+*.FCBak
+*.FCStd#
+
+# === CAD / Slicer temporários ===
+*.tmp
+*.gcode.tmp
+
+# === Sistema operacional ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# === Editores / IDEs ===
+.vscode/
+.idea/
+*.swp
+*~
+
+# === Firmware (Arduino / PlatformIO) ===
+.pio/
+build/
+*.hex
+*.elf
+
+# === Software (Python) ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# === Software (Node) ===
+node_modules/
+dist/
+
+# === Logs ===
+*.log
