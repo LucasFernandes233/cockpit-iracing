@@ -1,0 +1,14 @@
+PROJETO COCKPIT iRACING — VOLANTE — PACOTE PRINCIPAL (rev01, 12/10/2026)
+Somente arquivos atualizados. Projeto 100% em impressão 3D.
+
+01_documentos/   Requisitos e Inventário; Roteiro do Projeto (fases, portões, orçamento).
+                 Cópias em PDF. As versões vivas e editáveis estão nos documentos da conversa.
+02_maquete/      Desenho 1:1 da placa frontal (layout válido na rev01) para a maquete de papelão (Fase 2).
+                 Imprimir em "tamanho real / 100%". A3 ou 2 folhas A4 para emendar.
+03_firmware/     Firmware do Raspberry Pi Pico (Arduino IDE, core Earle Philhower).
+04_cad/          Modelo 3D rev01: montagem STEP (FreeCAD/SolidWorks), STEP por peça,
+                 STL para impressão, relatório de folgas e LEIA-ME com a tabela de impressão.
+05_manual/       Manual de montagem rev01, 18 folhas em estilo blueprint.
+06_fontes/       Scripts que geram o modelo 3D, o desenho da placa e o manual.
+
+Ordem de uso: siga o Roteiro do Projeto, começando pela Fase 0.

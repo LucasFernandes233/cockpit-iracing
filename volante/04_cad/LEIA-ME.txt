@@ -1,0 +1,33 @@
+VOLANTE — PROTÓTIPO P1 (rev01) — MODELO 3D — 100% IMPRESSÃO 3D
+
+O QUE MUDOU NA rev01
+- Todas as peças fabricadas passam a ser impressas em 3D (sem corte a laser e sem carbono).
+- Chapa da aleta: PA-CF 5 mm (era alumínio 3 mm). Fator de segurança ~3 num puxão de 50 N.
+- Ímã de retorno: Ø10 × 5 mm (era Ø10 × 4), nivelado com a face traseira da chapa.
+- Verificação de interferências refeita: nenhuma, em repouso e com a aleta acionada.
+
+COMO ABRIR (FreeCAD ou SolidWorks)
+- Arquivo > Abrir > volante_P1_montagem.step (abre como montagem, peças nomeadas).
+- Peças avulsas em pecas_step/. Não use os .stl para editar: são só para a impressora.
+
+SISTEMA DE COORDENADAS
+- Origem: eixo da base, na face TRASEIRA da placa frontal.
+- X para a direita, Y para cima, Z na direção do piloto.
+
+O QUE IMPRIMIR (enviar à gráfica a pasta impressao_stl/)
+Peça                         Material   Qtd  Preenchimento  Orientação na mesa
+placa_frontal_P1.stl         PETG*      1    40% gyroid      deitada, frente para baixo
+pegada_dir.stl / _esq.stl    PETG       1+1  25%             em pé, aba para baixo
+suporte_aleta_dir/_esq.stl   PA-CF      1+1  60%             base apoiada na mesa
+carregador_aleta_x2.stl      PA-CF      2    60%             face traseira na mesa
+chapa_aleta_x2.stl           PA-CF      2    100%            DEITADA (camadas no sentido do esforço)
+batente_TPU_x2.stl           TPU 95A    2    100%            qualquer
+* Na versão final P2, a placa frontal também passa para PA-CF.
+
+PEÇAS COMPRADAS (não imprimir)
+Eixos de aço Ø4 × 44, parafusos M8 sem cabeça de ponta plana (aço: o ímã precisa atrair aço),
+ímãs N52 Ø10 × 5 e Ø5 × 3, buchas de bronze, insertos M3/M4, parafusos, eletrônica.
+Os itens com prefixo REF_ na montagem são só referência.
+
+VERIFICAÇÃO
+Ver relatorio_verificacao.txt. O script que regenera tudo (CadQuery) está em 06_fontes/modelo_volante.py.
