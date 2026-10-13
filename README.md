@@ -43,15 +43,21 @@ cockpit-iracing/
 
 Status: ✅ no repositório · ⏳ pendente (gerado na conversa de projeto, falta adicionar)
 
-| Arquivo | O que é | Pasta destino | Fase | Status |
-|---------|---------|---------------|------|--------|
+| Arquivo | O que é | Local | Fase | Status |
+|---------|---------|-------|------|--------|
 | `Roteiro_Projeto_Volante.pdf` | Ordem das fases, portões e testes | *(raiz)* | Todas | ✅ |
-| Volante de Simulação — Requisitos e Inventário | Requisitos, decisões, layout de comandos, pinagem, lista de compras | `volante/requisitos/` | Todas | ⏳ |
-| `placa_frontal_layout_MVP_rev00` (A3 e 2× A4) | Desenho 1:1 da placa para a maquete | `volante/mecanica/` | 2 | ⏳ |
-| `volante_mvp.ino` | Firmware do Raspberry Pi Pico | `volante/firmware/` | 3, 5 | ⏳ |
-| `aleta_mecanismo_rev00.pdf` | Conceito e cálculos das aletas | `volante/mecanica/` | Consulta | ⏳ |
-| `volante_P1_rev00_CAD.zip` | STEP, STL, DXF da chapa, relatório de folgas | `volante/mecanica/` (STL/DXF → `fabricacao/`) | 4 | ⏳ |
-| `manual_montagem_volante_P1.pdf` | Manual de montagem (18 folhas) | `volante/fabricacao/` | 5, 7 | ⏳ |
+| **Volante de Simulação — Requisitos e Inventário** | Requisitos, decisões, layout de comandos, **pinagem**, lista de compras | `volante/requisitos/` | Todas | ⏳ **falta** |
+| `placa_frontal_layout_MVP_rev00_A3.pdf` + `_2xA4.pdf` | Desenho 1:1 da placa para a maquete | `volante/mecanica/` | 2 | ✅ |
+| `volante_mvp.ino` | Firmware do Raspberry Pi Pico | `volante/firmware/` | 3, 5 | ✅ |
+| `aleta_mecanismo_rev00.pdf` | Conceito e cálculos das aletas | `volante/mecanica/` | Consulta | ✅ |
+| Pacote CAD rev00 (era `volante_P1_rev00_CAD.zip`, extraído) | STEP + modelo CadQuery + relatório de folgas | `volante/mecanica/` | 4 | ✅ |
+| └ STL de impressão + DXF das chapas | Arquivos de fabricação | `volante/fabricacao/` | 4 | ✅ |
+| **`manual_montagem_volante_P1.pdf`** | Manual de montagem (18 folhas) | `volante/fabricacao/` | 5, 7 | ⏳ **falta** |
+
+> O pacote CAD veio como `.zip` e foi **extraído** para o repositório (código/STEP/STL
+> versionáveis em vez de um binário). O modelo é paramétrico em **CadQuery**
+> (`volante/mecanica/modelo_volante.py`), não FreeCAD. Para enviar a fornecedor, basta
+> zipar `mecanica/` + `fabricacao/`.
 
 > **Regra de revisão:** todo arquivo enviado a fornecedor leva número de revisão no nome
 > (`_rev01`). Nunca sobrescrever — criar revisão nova. Quando a rev01 sair (Fase 2), os

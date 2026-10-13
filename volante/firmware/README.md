@@ -2,7 +2,7 @@
 
 Firmware do Raspberry Pi Pico (RP2040).
 
-**Arquivo principal:** `volante_mvp.ino` ⏳ (a adicionar)
+**Arquivo principal:** `volante_mvp.ino` ✅ (rev00)
 
 **Ambiente (Fase 3):** Arduino IDE + pacote "Raspberry Pi Pico/RP2040" (Earle Philhower),
 USB Stack = "Pico SDK". Firmware expõe 22 botões via HID.

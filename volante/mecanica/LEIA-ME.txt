@@ -1,0 +1,27 @@
+VOLANTE — PROTÓTIPO P1 (rev00) — MODELO 3D
+
+COMO ABRIR NO SOLIDWORKS
+1. Arquivo > Abrir > tipo "STEP AP203/214/242 (*.step)".
+2. volante_P1_montagem.step abre como MONTAGEM, com cada peça separada e nomeada.
+3. As peças em pecas_step/ abrem como peças avulsas (corpo sólido importado).
+4. Para editar com recursos (furos, extrusões), use Insert > FeatureWorks > Recognize
+   Features na peça importada, ou remodele usando o STEP como referência.
+
+SISTEMA DE COORDENADAS
+- Origem: eixo da base, na face TRASEIRA da placa frontal.
+- X para a direita, Y para cima, Z na direção do piloto (vista Frontal = vista do piloto).
+
+O QUE FABRICAR (para o fornecedor)
+- impressao_stl/placa_frontal_P1.stl ........ PETG, 5 mm (protótipo; final em carbono 3 mm)
+- impressao_stl/pegada_dir.stl / pegada_esq.stl  PETG
+- impressao_stl/suporte_aleta_dir/esq.stl .... PA-CF (ou PETG no protótipo)
+- impressao_stl/carregador_aleta_x2.stl ...... PA-CF, IMPRIMIR 2
+- impressao_stl/batente_TPU_x2.stl .......... TPU 95A, IMPRIMIR 2
+- chapa_aleta_x2_rev00.dxf .................. alumínio 6061-T6 3 mm, CORTAR 2 (mesma peça nos dois lados)
+
+PEÇAS COM PREFIXO REF_ / ímãs / eixos / parafusos / sensores
+São componentes comprados, só para referência e checagem de interferência. Não fabricar.
+
+VERIFICAÇÃO
+Ver relatorio_verificacao.txt (interferências em repouso e com a aleta acionada, folgas e massas).
+modelo_volante.py gera tudo de novo a partir dos parâmetros (CadQuery).
